@@ -298,6 +298,12 @@ a:hover {
 }
 
 /* --- Заголовки: один шрифт, один ритм кернинга --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  letter-spacing: var(--heading-track);
+  line-height: var(--heading-lh);
+}
+
 .hero-title,
 .section-title,
 .card-title,
@@ -470,6 +476,7 @@ a:hover {
   line-height: var(--heading-lh-tight);
   margin: 0 0 1.5rem;
   max-width: min(100%, 22em);
+  min-height: 5.5em;
 }
 
 /* Печатающийся заголовок (аналог TextType / React Bits) */
@@ -520,14 +527,14 @@ a:hover {
   margin: 0;
   padding-bottom: 1.5rem;
   width: 100%;
-  max-width: min(100%, 340px);
+  max-width: min(100%, 420px);
   margin-inline: auto;
   justify-self: center;
 }
 
 @media (min-width: 960px) {
   .hero-photo-block {
-    max-width: min(50vw, 580px);
+    max-width: min(50vw, 640px);
     justify-self: end;
     margin-inline: 0 0;
   }
@@ -536,8 +543,8 @@ a:hover {
 .hero-photo-frame {
   position: relative;
   overflow: hidden;
-  border-radius: calc(var(--radius) + 6px);
-  padding: 3px;
+  border-radius: calc(var(--radius) + 8px);
+  padding: 4px;
   background: linear-gradient(145deg, var(--accent) 0%, rgba(132, 0, 255, 0.35) 40%, var(--depth) 100%);
   box-shadow:
     0 28px 64px rgba(0, 0, 0, 0.45),
@@ -559,7 +566,7 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 6.5;
   object-fit: cover;
   object-position: center 60%;
   border-radius: var(--radius);
@@ -763,10 +770,11 @@ a:hover {
   padding: 0.45rem 1rem;
   color: var(--text-muted);
   font-size: 0.9rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: rgba(20, 217, 196, 0.04);
+  border: 1px solid rgba(20, 217, 196, 0.22);
   border-radius: 999px;
   cursor: default;
+  box-shadow: 0 0 12px rgba(20, 217, 196, 0.06);
   transition:
     border-color 0.3s var(--ease-out-expo),
     color 0.3s,
@@ -776,10 +784,10 @@ a:hover {
 }
 
 .about-list li:hover {
-  border-color: var(--accent-border);
+  border-color: rgba(20, 217, 196, 0.55);
   color: var(--text);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 0 16px var(--accent-dim);
+  box-shadow: 0 0 18px rgba(20, 217, 196, 0.18), 0 8px 24px rgba(0, 0, 0, 0.25);
   filter: brightness(1.15);
 }
 
@@ -1183,10 +1191,11 @@ a:hover {
   padding: 0.55rem 1.1rem;
   font-size: 0.9rem;
   color: var(--text-muted);
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: rgba(20, 217, 196, 0.04);
+  border: 1px solid rgba(20, 217, 196, 0.22);
   border-radius: var(--radius-sm);
   cursor: default;
+  box-shadow: 0 0 12px rgba(20, 217, 196, 0.06);
   transition:
     border-color 0.3s var(--ease-out-expo),
     color 0.3s,
@@ -1196,10 +1205,10 @@ a:hover {
 }
 
 .why-chips li:hover {
-  border-color: var(--accent-border);
+  border-color: rgba(20, 217, 196, 0.55);
   color: var(--text);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 0 16px var(--accent-dim);
+  box-shadow: 0 0 18px rgba(20, 217, 196, 0.18), 0 8px 24px rgba(0, 0, 0, 0.25);
   filter: brightness(1.15);
 }
 
@@ -1225,21 +1234,23 @@ a:hover {
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--text-muted);
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: rgba(20, 217, 196, 0.04);
+  border: 1px solid rgba(20, 217, 196, 0.22);
   border-radius: var(--radius-sm);
   cursor: default;
+  box-shadow: 0 0 12px rgba(20, 217, 196, 0.06);
   transition:
+    border-color 0.3s var(--ease-out-expo),
     transform 0.4s var(--ease-out-expo),
     box-shadow 0.4s var(--ease-out-expo),
     filter 0.35s;
 }
 
 .why-chip-accent:hover {
-  border-color: var(--accent-border);
+  border-color: rgba(20, 217, 196, 0.55);
   color: var(--text);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 0 16px var(--accent-dim);
+  box-shadow: 0 0 18px rgba(20, 217, 196, 0.18), 0 8px 24px rgba(0, 0, 0, 0.25);
   filter: brightness(1.15);
 }
 
@@ -1345,7 +1356,7 @@ a:hover {
   color: var(--text-muted);
   font-weight: 600;
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
-  line-height: 1.35;
+  line-height: var(--heading-lh);
 }
 
 /* CTA final */
