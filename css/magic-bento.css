@@ -65,7 +65,7 @@
 }
 
 .magic-bento-card__label {
-  font-family: var(--heading-font, "Syne", sans-serif);
+  font-family: var(--heading-font);
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -74,16 +74,16 @@
 }
 
 .magic-bento-card__title {
-  font-family: var(--heading-font, "Syne", sans-serif);
+  font-family: var(--heading-font);
   font-weight: 700;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
-  letter-spacing: var(--heading-track, -0.03em);
+  letter-spacing: var(--heading-track);
   margin: 0 0 0.4em;
-  line-height: 1.15;
+  line-height: var(--heading-lh-tight);
 }
 
 .magic-bento-card__description {
-  font-family: var(--font-body, "Literata", serif);
+  font-family: var(--font-body);
   font-size: 0.8rem;
   line-height: 1.45;
   opacity: 0.82;
@@ -135,17 +135,14 @@
 
   .magic-bento-card:nth-child(3) {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
+    aspect-ratio: auto;
   }
 
   .magic-bento-card:nth-child(4) {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-  }
-
-  .magic-bento-card:nth-child(6) {
-    grid-column: 4;
-    grid-row: 3;
+    grid-column: span 2;
+    grid-row: span 1;
+    aspect-ratio: auto;
   }
 }
 
