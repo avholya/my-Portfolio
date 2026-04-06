@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coder — портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/magic-bento.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/hero-typewriter.js"></script>
+  <script defer src="js/magic-bento.js"></script>
+  <script defer src="js/stagger-testimonials.js"></script>
+</head>
+<body class="magic-site">
+  <div class="read-progress-wrap" aria-hidden="true">
+    <div class="read-progress" id="read-progress"></div>
+  </div>
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#" class="logo">Vibe Coder</a>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Умею</a>
+      <a href="#projects">Проекты</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact" class="nav-cta">Связаться</a>
+    </nav>
+    <button type="button" class="menu-toggle" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-layout">
+        <div class="hero-main">
+          <p class="hero-eyebrow reveal reveal-1">Vibe Coder / Portfolio / Web &amp; Experiences</p>
+          <h1 class="hero-title">
+            <span
+              class="text-type hero-typewriter"
+              aria-live="polite"
+              aria-atomic="true"
+              aria-label="Главный заголовок"
+            >
+              <span class="text-type__content" id="hero-typewriter-text"></span
+              ><span class="text-type__cursor" aria-hidden="true">●</span>
+            </span>
+          </h1>
+          <p class="hero-lead reveal reveal-3">Не просто «что-то сверстать», а собрать ощущение: стиль, логику и подачу так, чтобы проект хотелось открыть, листать и запомнить.</p>
+          <div class="hero-actions reveal reveal-4">
+            <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+            <a href="#contact" class="btn btn-ghost">Обсудить задачу</a>
+          </div>
+        </div>
+        <figure class="hero-photo-block reveal reveal-5">
+          <div class="hero-photo-frame">
+            <img
+              src="images/hero.png"
+              alt="Автор портфолио"
+              class="hero-photo-img"
+              width="640"
+              height="800"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="hero-photo-tag">vibe → system</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Я не просто пишу код — я собираю впечатление</h2>
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>Я работаю на стыке кода, визуала, UX и AI-инструментов.</p>
+            <p>Для меня сайт — это не набор блоков. Это ощущение проекта, ритм, подача, структура и то, как человек чувствует себя внутри интерфейса.</p>
+            <p class="about-label">Я делаю:</p>
+            <ul class="about-list">
+              <li>лендинги</li>
+              <li>портфолио</li>
+              <li>промо-страницы</li>
+              <li>интерфейсы</li>
+              <li>спецпроекты</li>
+              <li>digital-концепты</li>
+              <li>AI-first сайты и продукты</li>
+            </ul>
+            <p>Мой подход — сделать быстро, красиво и не бездумно. Чтобы проект не выглядел как очередной шаблон, собранный без вкуса и идеи.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills skill-bento-wrap bento-section" id="skills">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Что я делаю</h2>
+        <div
+          class="card-grid skill-bento-grid"
+          id="magic-bento-grid"
+          data-reveal
+          aria-label="Направления работы"
+        >
+          <div
+            class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container"
+          >
+            <div class="magic-bento-card__header">
+              <div class="magic-bento-card__label">Фокус</div>
+            </div>
+            <div class="magic-bento-card__content">
+              <h3 class="magic-bento-card__title">Лендинги</h3>
+              <p class="magic-bento-card__description">
+                Сайты, которые не просто «есть», а собирают внимание, держат ритм и ведут человека по смыслу.
+              </p>
+            </div>
+          </div>
+          <div
+            class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container"
+          >
+            <div class="magic-bento-card__header">
+              <div class="magic-bento-card__label">Образ</div>
+            </div>
+            <div class="magic-bento-card__content">
+              <h3 class="magic-bento-card__title">Портфолио</h3>
+              <p class="magic-bento-card__description">
+                Страницы, которые показывают не только работы, но и стиль, характер и уровень.
+              </p>
+            </div>
+          </div>
+          <div
+            class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container"
+          >
+            <div class="magic-bento-card__header">
+              <div class="magic-bento-card__label">Вайб</div>
+            </div>
+            <div class="magic-bento-card__content">
+              <h3 class="magic-bento-card__title">Визуальные концепты</h3>
+              <p class="magic-bento-card__description">
+                Когда нужен не просто сайт, а ощущение: атмосфера, характер, настроение, подача.
+              </p>
+            </div>
+          </div>
+          <div
+            class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container"
+          >
+            <div class="magic-bento-card__header">
+              <div class="magic-bento-card__label">Стек</div>
+            </div>
+            <div class="magic-bento-card__content">
+              <h3 class="magic-bento-card__title">AI + Web</h3>
+              <p class="magic-bento-card__description">
+                Использую нейросети как инструмент ускорения и усиления идей, а не как замену мышлению.
+              </p>
+            </div>
+          </div>
+          <div
+            class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container"
+          >
+            <div class="magic-bento-card__header">
+              <div class="magic-bento-card__label">Логика</div>
+            </div>
+            <div class="magic-bento-card__content">
+              <h3 class="magic-bento-card__title">UX и структура</h3>
+              <p class="magic-bento-card__description">
+                Продумываю, как человек читает, куда смотрит, где теряется и где принимает решение.
+              </p>
+            </div>
+          </div>
+          <div
+            class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container"
+          >
+            <div class="magic-bento-card__header">
+              <div class="magic-bento-card__label">Скорость</div>
+            </div>
+            <div class="magic-bento-card__content">
+              <h3 class="magic-bento-card__title">Быстрый запуск</h3>
+              <p class="magic-bento-card__description">
+                Могу собрать сильную первую версию быстро, без месяцев бесконечных согласований.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Как я работаю</h2>
+        <ol class="approach-list">
+          <li data-reveal>
+            <span class="approach-num">01</span>
+            <div>
+              <h3>Сначала вайб</h3>
+              <p>Я смотрю не только на задачу, но и на ощущение, которое должен передавать проект.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="approach-num">02</span>
+            <div>
+              <h3>Потом структура</h3>
+              <p>Красивый сайт без логики — это просто красивая обёртка. Поэтому я собираю смысл, сценарий и путь пользователя.</p>
+            </div>
+          </li>
+          <li data-reveal>
+            <span class="approach-num">03</span>
+            <div>
+              <h3>Потом реализация</h3>
+              <p>Когда есть стиль и логика, проект собирается быстрее, точнее и выглядит сильно.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Избранные проекты</h2>
+        <div class="projects-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-meta">01</div>
+            <h3 class="project-title">AI Landing Experience</h3>
+            <p>Лендинг для digital-продукта с акцентом на атмосферу, скорость восприятия и современный визуал.</p>
+            <p class="project-done"><strong>Что сделано:</strong> структура, тексты, дизайн-концепция, сборка.</p>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-meta">02</div>
+            <h3 class="project-title">Portfolio for Creative Expert</h3>
+            <p>Личный сайт-портфолио, который показывает не только кейсы, но и стиль человека.</p>
+            <p class="project-done"><strong>Что сделано:</strong> позиционирование, подача, визуальный ритм, упаковка работ.</p>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-meta">03</div>
+            <h3 class="project-title">Bot &amp; Funnel Page</h3>
+            <p>Промо-страница под воронку и digital-продукт с акцентом на конверсию и лёгкость восприятия.</p>
+            <p class="project-done"><strong>Что сделано:</strong> логика блоков, тексты, CTA, визуальный каркас.</p>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-meta">04</div>
+            <h3 class="project-title">Concept Site for Creator</h3>
+            <p>Сайт с упором на трендовую подачу, сильный первый экран и ощущение «это хочется переслать».</p>
+            <p class="project-done"><strong>Что сделано:</strong> creative direction, структура, визуальная концепция.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Отзывы</h2>
+        <p class="reviews-lead" data-reveal>Клиенты отмечают не только визуал, но и логику, скорость и ощущение цельности проекта.</p>
+      </div>
+      <div class="stagger-wrap" data-reveal>
+        <div class="stagger-track" id="stagger-track">
+          <!-- cards injected by js/stagger-testimonials.js -->
+        </div>
+        <div class="stagger-nav">
+          <button class="stagger-btn" id="stagger-prev" aria-label="Предыдущий отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="stagger-btn" id="stagger-next" aria-label="Следующий отзыв">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="section-inner narrow">
+        <h2 class="section-title" data-reveal>Почему ко мне идут не просто за кодом</h2>
+        <p class="why-lead" data-reveal>Потому что я умею видеть проект целиком.</p>
+        <div class="why-stack" data-reveal>
+          <div class="why-group">
+            <p class="why-sub">Не только:</p>
+            <ul class="why-chips">
+              <li>как это собрать</li>
+            </ul>
+          </div>
+          <div class="why-group">
+            <p class="why-sub">но и:</p>
+            <ul class="why-chips">
+              <li>как это подать</li>
+              <li>как это будет восприниматься</li>
+              <li>где человек зацепится взглядом</li>
+              <li>что запомнит</li>
+              <li>почему это будет выглядеть дороже, чем стоит</li>
+            </ul>
+          </div>
+        </div>
+        <p class="why-tagline-label" data-reveal>Я соединяю:</p>
+        <div class="why-tagline-chips" data-reveal>
+          <span class="why-chip-accent">эстетику</span>
+          <span class="why-chip-accent">структуру</span>
+          <span class="why-chip-accent">digital-мышление</span>
+          <span class="why-chip-accent">скорость</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Инструменты</h2>
+        <div class="badges" data-reveal>
+          <span class="badge">ChatGPT</span>
+          <span class="badge">Cursor</span>
+          <span class="badge">HTML / CSS / JS</span>
+          <span class="badge">React</span>
+          <span class="badge">Tailwind</span>
+          <span class="badge">Framer Motion</span>
+          <span class="badge">Figma</span>
+          <span class="badge">Tilda / Webflow / custom</span>
+          <span class="badge">Telegram / Bots / AI tools</span>
+        </div>
+        <p class="stack-note" data-reveal>Но если честно — главный инструмент не стек, а вкус, насмотренность и умение собирать цельное впечатление.</p>
+      </div>
+    </section>
+
+    <section class="section audience" id="audience">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Кому подойдёт моя работа</h2>
+        <ul class="audience-list" data-reveal>
+          <li>экспертам</li>
+          <li>креаторам</li>
+          <li>digital-проектам</li>
+          <li>AI-продуктам</li>
+          <li>студиям</li>
+          <li>тем, кому нужен сайт с характером</li>
+          <li>тем, кто не хочет шаблонную безликую страницу</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="manifesto" id="manifesto">
+      <div class="section-inner">
+        <blockquote class="manifesto-quote" data-reveal>
+          <p>Хороший сайт — это не когда «нормально сверстано».</p>
+          <p>Это когда у проекта появляется энергия, форма и ощущение, что он живой.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section cta-final" id="cta">
+      <div class="section-inner narrow">
+        <h2 class="section-title" data-reveal>Если тебе нужен сайт, который выглядит сильно и ощущается современно — давай соберём</h2>
+        <p class="cta-text" data-reveal>Могу помочь с концепцией, структурой, упаковкой и релизом. От первого вайба до готовой страницы.</p>
+        <div class="hero-actions" data-reveal>
+          <a href="https://t.me/avholya" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Написать мне</a>
+          <a href="#projects" class="btn btn-ghost">Посмотреть работы</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Контакты</h2>
+        <div class="contact-grid" data-reveal>
+          <div>
+            <p class="contact-label">Telegram</p>
+            <a href="https://t.me/avholya" class="contact-link" target="_blank" rel="noopener noreferrer">@avholya</a>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <a href="mailto:avholga@mail.ru" class="contact-link">avholga@mail.ru</a>
+          </div>
+        </div>
+        <p class="contact-socials-label" data-reveal>Соцсети и портфолио</p>
+        <div class="socials" data-reveal>
+          <a href="#" class="social-link">Behance</a>
+          <a href="#" class="social-link">Dribbble</a>
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+        <p class="socials-hint" data-reveal>Подставь свои ссылки вместо заглушек.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Vibe Coder · Web &amp; Experiences</p>
+    <a href="#top">Наверх</a>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle')?.addEventListener('click', function () {
+      document.querySelector('.nav')?.classList.toggle('nav-open');
+      this.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        document.querySelector('.nav')?.classList.remove('nav-open');
+        document.querySelector('.menu-toggle')?.classList.remove('open');
+      });
+    });
+
+    (function () {
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var bar = document.getElementById('read-progress');
+
+      function updateReadProgress() {
+        if (!bar) return;
+        var doc = document.documentElement;
+        var scrollTop = window.scrollY || doc.scrollTop;
+        var max = doc.scrollHeight - doc.clientHeight;
+        var t = max > 0 ? scrollTop / max : 0;
+        bar.style.transform = 'scaleX(' + Math.min(1, Math.max(0, t)) + ')';
+      }
+
+      if (bar) {
+        if (!reduced) {
+          window.addEventListener('scroll', updateReadProgress, { passive: true });
+        }
+        updateReadProgress();
+      }
+
+      if (reduced) {
+        document.querySelectorAll('[data-reveal]').forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          });
+        },
+        { rootMargin: '0px 0px -7% 0px', threshold: 0.07 }
+      );
+
+      document.querySelectorAll('[data-reveal]').forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
