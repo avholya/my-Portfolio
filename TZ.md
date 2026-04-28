@@ -270,7 +270,7 @@ Telegram / Bots / AI tools
 
 Блок "Контакты"
 
-Telegram: @avholya
+Telegram: @avhadeeva_olga
 Email: avholga@mail.ru
 
 Behance / Dribble / GitHub / Instagram

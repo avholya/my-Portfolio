@@ -64,5 +64,5 @@ npx serve .
 
 ## Контакты
 
-- Telegram: [@avholya](https://t.me/avholya)
+- Telegram: [@avhadeeva_olga](https://t.me/avhadeeva_olga)
 - Email: avholga@mail.ru
